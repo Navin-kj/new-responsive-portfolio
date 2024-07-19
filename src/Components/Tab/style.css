@@ -1,0 +1,135 @@
+.tab-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.navigation-tab {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1002;
+}
+.tab {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.486) 0px 2px 8px 0px;
+}
+.button-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.button-tab:hover {
+  cursor: pointer;
+  animation: wave 1.5s ease-in-out 2;
+}
+.button-tab.active {
+  color: rgb(0, 136, 255);
+  svg {
+    color: rgb(0, 136, 255);
+    width: 30px;
+    height: 20px;
+  }
+}
+.link,
+svg {
+  color: black;
+  width: 30px;
+  height: 20px;
+}
+.link:hover {
+  color: rgb(241, 241, 241);
+}
+
+.link-text {
+  font-size: 14px;
+}
+
+.tab-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  height: 40px;
+  font-size: 18px;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  padding: 5px;
+  z-index: 1002;
+  transition: height 0.3s;
+}
+
+.head-tools {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  .svg-icon-down {
+    color: rgb(7, 7, 7);
+    width: 15x;
+    height: 15px;
+    cursor: pointer;
+  }
+}
+
+.web-tab {
+  z-index: 1005;
+  position: fixed;
+  left: 3%;
+  top: 30%;
+  background-color: rgb(225, 225, 225);
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25px;
+  height: 190px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  .button-web-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 50px;
+    background-color: rgba(80, 80, 80, 0.825);
+    transform: scale(0.9);
+    svg {
+      margin-left: 4px;
+      color: white;
+      width: 20px;
+      height: 15px;
+    }
+  }
+  .button-web-tab.active {
+    background-color: rgba(4, 86, 194, 0.825);
+    transition: background-color 1s, transform 0.7s;
+    transform: scale(1.2);
+    svg {
+      margin-left: 4.5px;
+    }
+  }
+}

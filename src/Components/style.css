@@ -1,0 +1,86 @@
+.back-to-top-button {
+  position: fixed;
+  bottom: 140px;
+  right: 25px;
+  border-radius: 4px;
+  background-color: rgba(29, 29, 31, 0.7);
+  width: 32px;
+  height: 32px;
+  display: none;
+  z-index: 1003;
+  svg {
+    color: #fff;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.back-to-top-button.visible {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -4px;
+  cursor: pointer;
+}
+.mb-theme-toggle {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 5%;
+  top: 15px;
+  background-color: rgb(57, 143, 255);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  svg {
+    color: white;
+  }
+  z-index: 1006;
+}
+
+.logo-container {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  z-index: 1010;
+  .logo-global {
+    border-radius: 50%;
+    width: 50px;
+  }
+}
+.popup1 {
+  position: absolute;
+  display: flex;
+  font-size: 10px;
+  z-index: 1010;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 9%;
+  top: 35px;
+  border-radius: 5px;
+  animation: waveEffect1 2s ease-in-out infinite;
+  gap: 10px;
+  padding: 5px;
+  svg {
+    width: 10px;
+  }
+}
+
+@keyframes waveEffect1 {
+  0%,
+  100% {
+    transform: translateY(-50%) translateX(-10px);
+  }
+  50% {
+    transform: translateY(-50%) translateX(0);
+  }
+}

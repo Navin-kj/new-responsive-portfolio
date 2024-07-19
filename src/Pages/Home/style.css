@@ -1,0 +1,166 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+}
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  background-color: #f6f6f6;
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .img-content {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    .img-src {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .name {
+    font-weight: 600;
+    font-size: 19px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .desig {
+    color: rgb(79, 79, 79);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  .btn-follow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .whatsapp-icon {
+      color: green;
+    }
+  }
+  .btn-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    svg {
+      color: rgb(191, 9, 64);
+    }
+  }
+}
+
+.study-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 35px;
+  gap: 15px;
+
+  .graduate-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+  }
+  .icon-cap {
+    color: black;
+    width: 25px;
+    height: 25px;
+  }
+  .college {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: black;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    .degree {
+      font-weight: 500;
+      font-size: 17px;
+      color: #939494;
+    }
+  }
+}
+.open-to-work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  .green-circle {
+    border-radius: 50%;
+    background-color: rgb(5, 205, 59);
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.skill-set {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 5px;
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    padding: 6px;
+    border-radius: 6px;
+    align-items: start;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    .skill-logo {
+      color: black;
+      margin-left: -5px;
+    }
+    .skill {
+      font-weight: 600;
+    }
+    .skill-main {
+      color: #a8a8a8;
+    }
+  }
+}
+
+.download-resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  .dwnld-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+}
